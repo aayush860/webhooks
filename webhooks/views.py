@@ -19,3 +19,7 @@ def display(request):
         Data = impression_store.objects.all()
         return render(request, 'display.html', {'Data':Data})
     
+def clear(request):
+    if request.method=='GET':
+        impression_store.objects.all().delete()
+        return redirect('/display/')
