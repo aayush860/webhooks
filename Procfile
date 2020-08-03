@@ -1,1 +1,1 @@
-web: gunicorn weebhooks.wsgi
+web: gunicorn webhooks.wsgi
