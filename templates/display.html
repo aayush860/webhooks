@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h2>Cellpadding</h2>
+<p>Cell padding specifies the space between the cell content and its borders.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Impression</th> 
+    <th>Time</th>
+  </tr>
+  {% for i in Data%}
+  <tr>
+    <td>{{i.impression}}</td>
+    <td>{{i.time}} Seconds</td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+
+</body>
+</html>
