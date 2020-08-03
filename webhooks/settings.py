@@ -129,5 +129,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 SITE_ID=1
 DISABLE_COLLECTSTATIC=1
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
